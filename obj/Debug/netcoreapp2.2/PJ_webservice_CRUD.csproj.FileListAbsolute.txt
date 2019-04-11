@@ -1,0 +1,14 @@
+C:\Users\Noppadon\source\repos\PJ_webservice_CRUD\PJ_webservice_CRUD\bin\Debug\netcoreapp2.2\PJ_webservice_CRUD.deps.json
+C:\Users\Noppadon\source\repos\PJ_webservice_CRUD\PJ_webservice_CRUD\bin\Debug\netcoreapp2.2\PJ_webservice_CRUD.runtimeconfig.json
+C:\Users\Noppadon\source\repos\PJ_webservice_CRUD\PJ_webservice_CRUD\bin\Debug\netcoreapp2.2\PJ_webservice_CRUD.runtimeconfig.dev.json
+C:\Users\Noppadon\source\repos\PJ_webservice_CRUD\PJ_webservice_CRUD\bin\Debug\netcoreapp2.2\PJ_webservice_CRUD.dll
+C:\Users\Noppadon\source\repos\PJ_webservice_CRUD\PJ_webservice_CRUD\obj\Debug\netcoreapp2.2\PJ_webservice_CRUD.csprojAssemblyReference.cache
+C:\Users\Noppadon\source\repos\PJ_webservice_CRUD\PJ_webservice_CRUD\obj\Debug\netcoreapp2.2\PJ_webservice_CRUD.csproj.CoreCompileInputs.cache
+C:\Users\Noppadon\source\repos\PJ_webservice_CRUD\PJ_webservice_CRUD\obj\Debug\netcoreapp2.2\PJ_webservice_CRUD.RazorAssemblyInfo.cache
+C:\Users\Noppadon\source\repos\PJ_webservice_CRUD\PJ_webservice_CRUD\obj\Debug\netcoreapp2.2\PJ_webservice_CRUD.RazorAssemblyInfo.cs
+C:\Users\Noppadon\source\repos\PJ_webservice_CRUD\PJ_webservice_CRUD\obj\Debug\netcoreapp2.2\PJ_webservice_CRUD.AssemblyInfoInputs.cache
+C:\Users\Noppadon\source\repos\PJ_webservice_CRUD\PJ_webservice_CRUD\obj\Debug\netcoreapp2.2\PJ_webservice_CRUD.AssemblyInfo.cs
+C:\Users\Noppadon\source\repos\PJ_webservice_CRUD\PJ_webservice_CRUD\obj\Debug\netcoreapp2.2\PJ_webservice_CRUD.RazorTargetAssemblyInfo.cache
+C:\Users\Noppadon\source\repos\PJ_webservice_CRUD\PJ_webservice_CRUD\bin\Debug\netcoreapp2.2\PJ_webservice_CRUD.pdb
+C:\Users\Noppadon\source\repos\PJ_webservice_CRUD\PJ_webservice_CRUD\obj\Debug\netcoreapp2.2\PJ_webservice_CRUD.dll
+C:\Users\Noppadon\source\repos\PJ_webservice_CRUD\PJ_webservice_CRUD\obj\Debug\netcoreapp2.2\PJ_webservice_CRUD.pdb
