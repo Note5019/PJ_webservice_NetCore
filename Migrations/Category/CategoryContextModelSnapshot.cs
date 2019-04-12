@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PJ_webservice_CRUD.Models;
 
-namespace PJ_webservice_CRUD.Migrations
+namespace PJ_webservice_CRUD.Migrations.Category
 {
-    [DbContext(typeof(ProductContext))]
-    partial class ProductContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(CategoryContext))]
+    partial class CategoryContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PJ_webservice_CRUD.Models;
 
-namespace PJ_webservice_CRUD.Migrations
+namespace PJ_webservice_CRUD.Migrations.Category
 {
-    [DbContext(typeof(ProductContext))]
-    [Migration("20190411160008_InitialCreate")]
-    partial class InitialCreate
+    [DbContext(typeof(CategoryContext))]
+    [Migration("20190412085531_CategoryMigration")]
+    partial class CategoryMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -20,6 +20,21 @@ namespace PJ_webservice_CRUD.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("PJ_webservice_CRUD.Models.Category", b =>
+                {
+                    b.Property<string>("CategoryID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("varchar(10)");
+
+                    b.Property<string>("CategoryName")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)");
+
+                    b.HasKey("CategoryID");
+
+                    b.ToTable("Category");
+                });
+
             modelBuilder.Entity("PJ_webservice_CRUD.Models.Product", b =>
                 {
                     b.Property<string>("ProductID")
@@ -28,19 +43,28 @@ namespace PJ_webservice_CRUD.Migrations
 
                     b.Property<int>("Amount");
 
-                    b.Property<string>("CatID")
-                        .HasColumnType("varchar(10)");
+                    b.Property<string>("CategoryID");
 
                     b.Property<string>("ImgURL");
 
                     b.Property<int>("Price");
 
                     b.Property<string>("ProductName")
+                        .IsRequired()
                         .HasColumnType("varchar(50)");
 
                     b.HasKey("ProductID");
 
+                    b.HasIndex("CategoryID");
+
                     b.ToTable("Product");
+                });
+
+            modelBuilder.Entity("PJ_webservice_CRUD.Models.Product", b =>
+                {
+                    b.HasOne("PJ_webservice_CRUD.Models.Category", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryID");
                 });
 #pragma warning restore 612, 618
         }

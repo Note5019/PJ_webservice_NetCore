@@ -34,6 +34,8 @@ namespace PJ_webservice_CRUD
                     if (resolver != null) (resolver as DefaultContractResolver).NamingStrategy = null;
                     });
             services.AddDbContext<ProductContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            services.AddDbContext<CategoryContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +46,10 @@ namespace PJ_webservice_CRUD
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(options => 
+                options.WithOrigins("")
+                .AllowAnyHeader()
+                .AllowAnyMethod());
             app.UseMvc();
         }
     }

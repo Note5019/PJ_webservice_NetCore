@@ -7,20 +7,17 @@ using System.Threading.Tasks;
 
 namespace PJ_webservice_CRUD.Models
 {
-    public class Product
+    public class Category
     {
         [Key]
         [Required]
         [Column(TypeName = "varchar(10)")]
-        public string ProductID { get; set; }
+        public string CategoryID { get; set; }
         [Required]
         [Column(TypeName = "varchar(50)")]
-        public string ProductName { get; set; }
-        [Required]
-        public int Price { get; set; }
-        [Required]
-        public int Amount { get; set; }
-        public string ImgURL { get; set; }
-        public Category Category { get; set; }
+        public string CategoryName { get; set; }
+
+
+        public ICollection<Product> Products { get; set; }
     }
 }

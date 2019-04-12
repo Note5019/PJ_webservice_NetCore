@@ -25,6 +25,7 @@
       "PJ_webservice_CRUD/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.2.0",
+          "Microsoft.AspNetCore.Cors": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.EntityFrameworkCore": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
