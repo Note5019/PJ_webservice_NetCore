@@ -35,6 +35,10 @@ namespace PJ_webservice_CRUD
                     });
             services.AddDbContext<ProductContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
             services.AddDbContext<CategoryContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            services.AddDbContext<SO_HeaderContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            services.AddDbContext<SO_DetailContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            services.AddDbContext<PO_HeaderContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            services.AddDbContext<PO_DetailContext>(option => option.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
             services.AddCors();
         }
 
